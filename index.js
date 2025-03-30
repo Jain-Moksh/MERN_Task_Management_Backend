@@ -15,7 +15,7 @@ app.use(express.json()); //it is a middleware which parses the JSON data to be a
 // cors are used to allow cross-origin api access which means that the api request will be served only if the request is made from localhost:5173 all other will be blocked
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "*",
   })
 );
 
